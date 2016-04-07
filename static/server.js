@@ -42,6 +42,7 @@ app.post("message", router.message.send);
 // Routes
 app.get("/", router.index.view);
 
+app.use(express.static(__dirname + '/static'));
 // Start Server
 http.createServer(app).listen(app.get("port"), function() {
     console.log("Express server listening on port " + app.get("port"));
