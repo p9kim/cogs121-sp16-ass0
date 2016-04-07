@@ -1,0 +1,28 @@
+{
+  "name": "pa0",
+  "version": "1.0.0",
+  "description": "simple assignment",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prestart": "mongod --dbpath dbpath --logpath log/mongod.log&",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/p9kim/cogs121-sp16-ass0.git"
+  },
+  "author": "Paul Kim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/p9kim/cogs121-sp16-ass0/issues"
+  },
+  "homepage": "https://github.com/p9kim/cogs121-sp16-ass0#readme",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4",
+    "express-handlebars": "^3.0.0",
+    "mongodb": "^2.1.15",
+    "mongoose": "^4.4.11"
+  }
+}
